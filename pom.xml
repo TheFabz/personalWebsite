@@ -175,7 +175,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-          <url>http://localhost:8080/manager/text</url>
+          <url>https://fabiorodriguescv.herokuapp.com/</url>
           <server>tomcat</server>
           <username>maven</username>
           <password>maven</password>
@@ -190,7 +190,7 @@
         <version>3.0.3</version>
       </plugin>
 
-      
+
     </plugins>
   </build>
 </project>
