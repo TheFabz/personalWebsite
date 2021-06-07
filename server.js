@@ -5,17 +5,19 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use(express.static(__dirname+'/personalWebsite'));
+app.use(express.static(__dirname+'/'));
+
 
 // for use in cloud 
 app.listen(process.env.PORT, function () {
   console.log('listening.......................')
 })
 
-/*  
+
+/* 
 //local use
-app.listen(3003, function () {
-  console.log('listening on 3003')
+app.listen(3004, function () {
+  console.log('listening on 3004')
 })
 */
 
