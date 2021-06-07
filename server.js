@@ -5,6 +5,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+app.use(express.static(__dirname+'/public'));
+
 // for use in cloud 
 app.listen(process.env.PORT, function () {
   console.log('listening.......................')
