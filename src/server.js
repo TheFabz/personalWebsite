@@ -18,11 +18,6 @@ app.post('/message', (req, res, next) => {
   res.redirect('/')
 });
 
-//start page, loads log-in screen;
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
-})
-
 //local use
 // app.listen(3004, function () {
 //   console.log('listening on 3004')
